@@ -1,0 +1,515 @@
+.main
+  &-page-banner
+    padding: 156px 0px 240px 0px
+    background-image: url(../img/main-banner.png)
+    background-size: cover
+    margin-bottom: 50px
+  &-page-banner-title
+    text-shadow: 1.5px 2.6px 5px rgba(3, 3, 3, 0.25)
+    font-size: 80px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: 1
+    letter-spacing: normal
+    text-align: center
+    color: #ffffff
+    margin-bottom: 30px
+  &-page-banner-subtitle
+    text-shadow: 1.5px 2.6px 5px rgba(3, 3, 3, 0.25)
+    font-family: Georgia
+    font-size: 36px
+    font-weight: normal
+    font-stretch: normal
+    font-style: italic
+    line-height: 2.22
+    letter-spacing: normal
+    text-align: center
+    color: #ffffff
+    margin-bottom: 122px
+  &-page-banner-adv
+    & .banner-adv-item
+      height: 140px
+      & img
+        margin-bottom: 25px
+      & span
+        text-shadow: 1.5px 2.6px 5px rgba(3, 3, 3, 0.25)
+        font-size: 15px
+        font-weight: 500
+        font-stretch: normal
+        font-style: normal
+        line-height: normal
+        letter-spacing: normal
+        text-align: center
+        color: #ffffff
+      &:nth-of-type(2)
+        margin: 0px 200px
+.best-propose
+  margin-bottom: 80px
+  position: relative
+  &::before
+    content: ''
+    width: 100%
+    height: 100%
+    position: absolute
+    left: 0
+    top: 0
+    display: block
+    background-image: url(../img/best-propose-bg.png)
+    background-repeat: no-repeat
+    z-index: -1
+  &-info
+    position: relative
+    padding-left: 350px
+  &-title
+    font-size: 45px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #5e2256
+    margin-bottom: 65px
+    text-transform: uppercase
+  &-subtitle
+    font-size: 30px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #22232c
+    margin-bottom: 50px
+  &-btn
+    width: 295px
+    height: 70px
+    border-radius: 3px
+    border: solid 3px #8a3fb5
+    background-color: #ffffff
+    font-size: 17px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #5e2256
+    &:first-of-type
+      margin-right: 30px
+    & .bold
+      font-size: 28px
+      font-weight: bold
+  &-box
+    margin-bottom: 65px
+  &-lavender-img
+    position: absolute
+    left: -100px
+    top: -250px
+    z-index: 10
+  &-calc
+    border: solid 1px #d0d0d0
+    padding: 50px 160px
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      left: 25px
+      width: 620px
+      background: #fff
+      height: 1px
+      z-index: 1
+      top: -1px
+.propose-calc-title
+  position: absolute
+  top: -34px
+  left: 255px
+  z-index: 3
+  & img
+    margin-right: 30px
+.propose-calc-block
+  padding-left: 70px
+  margin-bottom: 50px
+.propose-calc-item
+  margin-bottom: 20px
+  &:last-of-type
+    margin-bottom: 0px
+  & span
+    margin-right: 13px
+    font-size: 15px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #22232c
+    width: 190px
+    display: inline-block
+  & input
+    width: 110px
+    height: 50px
+    border: solid 1px #d0d0d0
+    background-color: #ffffff
+    font-size: 22px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #22232c
+    padding: 0px 10px
+.propose-calc-items
+  margin-right: 30px
+.propose-calc-result
+  margin-left: 30px
+  text-align: center
+  &-title
+    font-size: 15px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #22232c
+    position: relative
+    margin-bottom: 20px
+    &::after
+      content: url(../img/rotate-arrow.png)
+      position: relative
+      top: 20px
+      left: 15px
+    & .bold
+      font-size: 28px
+      font-weight: bold
+      color: #5e2256
+  & .propose-calc-text
+    font-size: 14px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.64
+    letter-spacing: normal
+    text-align: center
+    color: #22232c
+    margin-bottom: 25px
+.propose-calc-info
+  & img
+    margin-right: 20px
+  & p span
+    margin-bottom: 5px
+    font-size: 14px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.64
+    letter-spacing: normal
+    text-align: left
+    color: #22232c
+    &:last-of-type
+      margin-bottom: 0px
+.about-lavender
+  margin-bottom: 120px
+  position: relative
+  &-paragraph
+    position: absolute
+    top: 0
+    left: -150px
+  &::after
+    content: url(../img/about-lavender-bg.png)
+    position: absolute
+    right: 0
+    top: 0
+.main-production
+  margin-bottom: 77px
+  position: relative
+  &::before
+    content: url(../img/lavender-bg-1.png)
+    position: absolute
+    left: 0
+    top: -280px
+    z-index: -1
+.main-more-products
+  position: relative
+  margin-bottom: 20px
+  &::before
+    position: absolute
+    z-index: -1
+    content: ''
+    width: 100%
+    height: 100%
+    background-image: url(../img/more-products-bg.png)
+    background-repeat: no-repeat
+    background-position: 100% 100%
+    background-size: contain
+.more-products-box
+  position: relative
+  width: 100%
+  height: 130px
+  border: solid 1px #dadada
+  background: #ffffff
+  margin-top: 200px
+  &::before
+    content: ''
+    top: -1px
+    left: 50%
+    transform: translateX(-50%)
+    width: 80%
+    position: absolute
+    height: 1px
+    background: #fff
+  &::after
+    content: ''
+    bottom: -1px
+    left: 50%
+    transform: translateX(-50%)
+    width: 40%
+    position: absolute
+    height: 1px
+    background: #fff
+  &-items
+    position: absolute
+    top: -180px
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    z-index: 10
+  & .lavender-btn 
+    position: absolute
+    top: 100%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 10
+    & img
+      margin-right: 15px
+.main-advantages
+  background-image: url(../img/adv-bg.png)
+  background-repeat: no-repeat
+  padding-top: 160px
+  margin-bottom: 120px
+  & .advantages-items
+    margin-bottom: 122px
+  & .advantage-item
+    margin-right: 40px
+    &:last-of-type
+      margin-right: 0px
+    & img
+      margin-bottom: 35px
+      max-width: 73px
+      object-fit: cover
+    &-title
+      font-size: 17px
+      font-weight: bold
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      text-align: center
+      color: #22232c
+      margin-bottom: 25px
+    &-text
+      font-size: 14px
+      font-weight: normal
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      text-align: center
+      color: #22232c
+  & .advantages-like
+    max-width: 75px
+    margin-bottom: 55px
+.reviews-slider-box
+  position: relative
+  & .reviews-slider
+    padding: 0px 30px
+  & .reviews-slider-next
+    position: absolute
+    right: -5px
+    top: 50%
+    transform: translateY(-50%)
+  & .reviews-slider-prev
+    position: absolute
+    left: -5px
+    top: 50%
+    transform: translateY(-50%)
+  & .reviews-slider-next,
+  & .reviews-slider-prev
+    & svg polygon
+      fill: #d0d0d0
+      transition: all .2s ease-in
+    &:hover
+      & svg polygon
+        fill: $lavender
+.main-contacts
+  margin-bottom: 111px
+.contacts-form
+  & input
+    height: 45px
+    width: 360px
+    padding: 0px 18px
+    border: solid 1px #dfdfdf
+    background-color: #ffffff
+    margin-right: 30px
+    font-size: 14px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #22232c
+    transition: all .2s ease-in
+    &:last-of-type
+      margin-right: 0px
+  & textarea
+    transition: all .2s ease-in
+    resize: none
+    font-size: 14px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #22232c
+    padding: 18px
+    height: 106px
+    width: 100%
+    border: solid 1px #dfdfdf
+    background-color: #ffffff
+    margin: 25px 0px 55px
+  & input:focus,
+  & textarea:focus
+    border-color: $lavender
+.contacts-map
+  position: relative
+  margin-bottom: 100px
+  .main-contacts-map
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 100%
+  &-info
+    width: 390px
+    height: 650px
+    box-shadow: 0 0 32px 0 rgba(3, 3, 3, 0.05)
+    background-color: #ffffff
+    padding: 15px 67px
+    & .adress
+      font-size: 17px
+      font-weight: normal
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      text-align: left
+      color: #22232c
+      margin-bottom: 53px
+    & a.d-flex
+      & img
+        margin-right: 15px
+      & span
+        font-size: 17px
+        font-weight: 500
+        font-stretch: normal
+        font-style: normal
+        line-height: 2.65
+        letter-spacing: normal
+        text-align: left
+        color: #22232c
+      &:hover
+        & span
+          color: $lavender
+    & span.social
+      margin-top: 50px
+      margin-bottom: 30px
+      font-size: 17px
+      font-weight: 500
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      text-align: left
+      color: #22232c
+    & .contacts-map-social a
+      margin-right: 15px
+
+.main-consult
+  background-image: url(../img/consult-bg.png)
+  background-repeat: no-repeat
+  padding-top: 135px
+  padding-bottom: 125px
+  margin-bottom: 30px
+  &-text
+    font-size: 15px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #ffffff
+    margin-bottom: 15px
+  &-title
+    margin-top: 70px
+    margin-bottom: 15px
+    font-size: 26px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #ffffff
+  &-subtitle
+    font-size: 20px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #ffffff
+    margin-bottom: 40px
+  &-social
+    margin-bottom: 40px
+    & a
+      margin-right: 36px
+      &:last-of-type
+        margin-right: 0px
+  &-phone
+    font-size: 20px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #ffffff
+
+.main-dropshipping
+  .dropshipping-box
+    position: relative
+    padding-left: 320px
+    margin-bottom: 130px
+    &-lavender
+      position: absolute
+      left: 0
+      top: -370px
+    &-info
+      & img
+        margin-right: 35px
+      & span
+        font-size: 30px
+        font-weight: 500
+        font-stretch: normal
+        font-style: normal
+        line-height: normal
+        letter-spacing: normal
+        text-align: center
+        color: #22232c
+        margin-bottom: 30px

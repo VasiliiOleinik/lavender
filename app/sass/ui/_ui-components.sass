@@ -1,0 +1,222 @@
+body
+  margin: 0
+  font-weight: normal
+  font-size: 16px
+  color: #000000
+  font-family: 'Roboto', sans-serif
+  background-color: #ffffff
+  position: relative
+  transition: .2s ease-in
+  & *
+    margin: 0
+    padding: 0
+    border: 0
+    outline: 0
+    background-color: transparent
+    box-sizing: border-box
+
+a
+  text-decoration: none
+  transition: .3s
+  color: inherit
+
+ul
+  list-style: none
+
+img
+  max-width: 100%
+
+button
+  cursor: pointer
+  font-family: 'Roboto', sans-serif
+
+textarea,
+input
+  font-family: 'Roboto', sans-serif
+
+label
+  cursor: pointer
+  &:focus,
+  &:hover,
+  &:active
+    outline: 0
+    outline-offset: 0
+    -webkit-tap-highlight-color: transparent
+    user-select: none
+
+section
+  flex-grow: 1
+
+select, input, textarea
+  appearance: none
+  border-radius: 0
+  background-color: transparent
+
+.content-wrapper
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  position: relative
+  transition: .3s
+  left: 0
+
+.page-wrapper
+  flex: 1 1
+
+.footer-wrapper
+  flex: 0 1
+
+.box
+  width: 100%
+  display: flex
+  max-width: 1180px
+  padding: 0 15px
+  margin: 0 auto
+  position: relative
+
+.flex-column
+  flex-direction: column
+
+.text-center
+  text-align: center
+
+.col-100
+  flex: 0 0 100%
+  max-width: 100%
+
+.d-flex
+  display: flex
+
+.col-50
+  flex: 0 0 50%
+  max-width: 50%
+  -webkit-box-flex: 0
+.col-25
+  flex: 0 0 25%
+  max-width: 25%
+  -webkit-box-flex: 0
+.col-40
+  flex: 0 0 40%
+  max-width: 40%
+  -webkit-box-flex: 0
+.col-60
+  flex: 0 0 60%
+  max-width: 60%
+  -webkit-box-flex: 0
+.col-70
+  flex: 0 0 70%
+  max-width: 70%
+  -webkit-box-flex: 0
+.w-100
+  width: 100%
+.space-between
+  justify-content: space-between
+
+.justify-center
+  justify-content: center
+
+.ai-center
+  align-items: center
+.ai-end
+  align-items: flex-end
+.ai-start
+  align-items: flex-start
+.flex-wrap
+  flex-wrap: wrap
+
+.h-100
+  height: 100%
+
+.p-RL20
+  padding: 0px 20px
+
+.m0-auto
+  margin: 0 auto
+.mr-auto
+  margin-right: auto
+
+.ml-auto
+  margin-left: auto
+
+body .content-wrapper .bold
+  font-weight: bold
+
+.lavender-btn
+  padding: 23px 75px
+  background: $lavender
+  border-radius: 3px
+  font-size: 18px
+  font-weight: 500
+  font-stretch: normal
+  font-style: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: center
+  color: #ffffff
+  text-transform: uppercase
+  transition: all .2s ease-in
+  &:hover
+    background: $darkLavender
+
+.little-cards
+  & .little-card
+    width: 263px
+    border: solid 2px #dadada
+    background-color: #ffffff
+    margin-right: 30px
+    margin-bottom: 30px
+    padding-right: 20px
+    transition: all .2s ease-in
+    &:nth-of-type(4n)
+      margin-right: 0px
+    & img
+      margin-right: 20px
+    & span
+      font-size: 16px
+      font-weight: 500
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      text-align: left
+      color: #22232c
+    &:hover
+      border: solid 2px #8a3fb5
+h4.title
+  font-size: 25px
+  font-weight: 500
+  font-stretch: normal
+  font-style: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: left
+  color: #22232c
+  margin-bottom: 40px
+  text-transform: uppercase
+h3.title
+  font-size: 50px
+  font-weight: 500
+  font-stretch: normal
+  font-style: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: center
+  color: #22232c
+  margin-bottom: 90px
+  text-transform: uppercase
+body .content-wrapper .text-center
+  text-align: center
+
+.text-section
+  font-size: 16px
+  font-weight: normal
+  font-stretch: normal
+  font-style: normal
+  line-height: normal
+  letter-spacing: normal
+  text-align: left
+  color: #22232c
+  & p,
+  & ul,
+  & ol
+    margin-bottom: 15px

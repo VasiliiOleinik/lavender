@@ -1,0 +1,60 @@
+.header
+  width: 100%
+  height: 64px
+  box-shadow: 0 0 43px 0 rgba(3, 3, 3, 0.58)
+  background-color: #ffffff
+  &-logo
+    margin-right: 20px
+  &-menu-list
+    padding: 0px 15px
+    cursor: pointer
+    transition: .2s all ease-in
+    & span
+      font-size: 15px
+      font-weight: 500
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      text-align: left
+      color: #2f3135
+    &.active,
+    &:hover
+      background: $lavender
+      & span
+        color: #fff
+      & svg path
+        fill: #fff
+  &-link
+    margin-right: 15px
+    margin-left: 5px
+    font-size: 15px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #2f3135
+    & img
+      margin-right: 5px
+    &:hover
+      color: $lavender
+  &-contacts-phone
+    font-size: 14px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: 5.7
+    letter-spacing: normal
+    text-align: left
+    color: #292929
+    margin-right: 14px
+    &:hover
+      color: $lavender
+    & img
+      margin-right: 5px
+  &-contacts-social
+    margin-right: 14px
+    &:last-of-type
+      margin-right: 0px

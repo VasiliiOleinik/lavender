@@ -1,0 +1,260 @@
+extends blocks/_layout
+append content
+	main.main
+		.main-page-banner
+			.box.d-flex.flex-column.ai-center.justify-center
+				h1.main-page-banner-title ЛАВАНДОВА МАНУФАКТУРА
+				h3.main-page-banner-subtitle Професійно вирощуємо аромат щастя
+				.main-page-banner-adv.d-flex.ai-center
+					.banner-adv-item.d-flex.flex-column.ai-center.space-between
+						img(src="img/manufactured.png" alt="")
+						span Власне виробництво
+					.banner-adv-item.d-flex.flex-column.ai-center.space-between
+						img(src="img/material.png" alt="")
+						span Власне виробництво
+					.banner-adv-item.d-flex.flex-column.ai-center.space-between
+						img(src="img/np.png" alt="")
+						span Власне виробництво
+		section.best-propose.d-flex.flex-column
+			.box.flex-column
+				.best-propose-info.d-flex.flex-column
+					img(src="img/best-propose.png" alt="" class="best-propose-lavender-img")
+					span.best-propose-title краща пропозиція на весну 2021 року
+					span.best-propose-subtitle Саджанці лаванди однорічні
+					.best-propose-box.d-flex.ai-center
+						button.best-propose-btn(type="button")
+							span от 20 шт. -
+								span.bold 15 грн
+								| за 1шт.
+						button.best-propose-btn(type="button")
+							span опт от 1000 шт.
+								span.bold 7 грн
+								| за 1шт.
+				.best-propose-calc
+					.propose-calc-title.d-flex.ai-center
+						img(src="img/calc.png" alt="")
+						span Калькулятор кол-ва саженцев:
+					.propose-calc-block.d-flex.ai-center
+						.propose-calc-items.d-flex.flex-column
+							.propose-calc-item.d-flex-ai-center
+								span  Ширина участка (метров):
+								input(type="text" id="area-width" value="1")
+							.propose-calc-item.d-flex-ai-center
+								span  Длина участка (метров):
+								input(type="text" id="area-height" value="1")
+						img(src="img/arrow-right.png" alt="")
+						.propose-calc-result.d-flex.flex-column
+							span.propose-calc-result-title Вам необходимо
+								span.bold#calc-result 1535
+								| саженцев
+							span.propose-calc-text За умови 40см між кущами і 140см між рядами
+							button(type="button" class="lavender-btn d-flex ai-center m0-auto") Заказать
+					.propose-calc-info.d-flex.ai-center
+						img(src="img/info.png" alt="")
+						p.d-flex.flex-column
+							span Рекомендуемая дистанция между кустами
+								span.bold 35-70см
+							span Рекомендуемая дистанция между рядами
+								span.bold 100-160см
+		section.about-lavender
+			.box.flex-column
+				img(src="img/paragraph.png" alt="" class="about-lavender-paragraph")
+				h4.title Все про лаванду
+				.little-cards.d-flex.flex-wrap
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/about-lavender-1.png" alt="")
+						span  Посадка лаванди у відкритий грунт
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/about-lavender-2.png" alt="")
+						span  Догляд за лавандою
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/about-lavender-3.png" alt="")
+						span  Стрижка лаванди
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/about-lavender-4.png" alt="")
+						span  Розмноження лаванди
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/about-lavender-6.png" alt="")
+						span  Види лаванди, характеристика та опис
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/about-lavender-7.png" alt="")
+						span  Фотосесії в лавандовому полi
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/about-lavender-8.png" alt="")
+						span  Суцвіття лаванди
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/about-lavender-9.png" alt="")
+						span  Доставка и оплата
+		section.main-production
+			.box.flex-column
+				h4.title Продукція
+				.little-cards.d-flex.flex-wrap
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/product-1.png" alt="")
+						span  Саджанці лаванди
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/product-2.png" alt="")
+						span  Олія лаванди
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/product-3.png" alt="")
+						span  Гідролат лаванди
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/product-4.png" alt="")
+						span  Букети лаванди
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/product-5.png" alt="")
+						span  Лавандовий мед
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/product-6.png" alt="")
+						span  Лавандові наборы
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/product-7.png" alt="")
+						span  Лавандове Саше
+					a(href="/" class="little-card d-flex ai-center")
+						img(src="img/product-8.png" alt="")
+						span  Свічки з вощини
+		section.main-more-products
+			.box.flex-column
+				h4.title.text-center И много других товаров...
+				.more-products-box
+					.more-products-box-items.d-flex.ai-center.justify-center
+						img(src="img/another-product-1.png" alt="")
+						img(src="img/another-product-2.png" alt="")
+						img(src="img/another-product-3.png" alt="")
+						img(src="img/another-product-4.png" alt="")
+						img(src="img/another-product-5.png" alt="")
+						img(src="img/another-product-6.png" alt="")
+					a(class="lavender-btn d-flex ai-center m0-auto" href="/")
+						img(src="img/shop-light.png" alt="")
+						span до магазину
+		section.main-advantages
+			.box.flex-column
+				h3.title  НАШІ ПЕРЕВАГИ
+				.advantages-items.d-flex.ai-center.space-between
+					.advantage-item.d-flex.flex-column.ai-center
+						img(src="img/adv-1.png" alt="")
+						span.advantage-item-title ВЛАСНЕ ВИРОБНИЦТВО
+						span.advantage-item-text Вирощуємо на власних екологічно чистих полях, на яких грунт обробляється вручну та частково механічно.
+					.advantage-item.d-flex.flex-column.ai-center
+						img(src="img/adv-2.png" alt="")
+						span.advantage-item-title ВИСОКИЙ РІВЕНЬ СЕРВІСУ
+						span.advantage-item-text Дозволяє вести постійний контроль якості на всіх етапах вирощування, зберігання, фасування та пакування лаванди.
+					.advantage-item.d-flex.flex-column.ai-center
+						img(src="img/adv-3.png" alt="")
+						span.advantage-item-title ГАРАНТІЯ ЯКОСТІ
+						span.advantage-item-text Ми використовуємо передові технології у вирощуванні лаванди та зберіганні готовоії продукції.
+					.advantage-item.d-flex.flex-column.ai-center
+						img(src="img/adv-4.png" alt="")
+						span.advantage-item-title Висока ВІДПОВІДАЛЬНІСТЬ
+						span.advantage-item-text За весь час ми зарекомендували себе як надійний виробник, з яким варто довгостроково співпрацювати.
+				img(src="img/comment.png" alt="" class="advantages-like m0-auto")
+				h3.title  Лавандова Мануфактура Відгуки
+				.reviews-slider-box
+					.reviews-slider
+						img(src="img/slide-1.png" alt="")
+						img(src="img/slide-2.png" alt="")
+						img(src="img/slide-3.png" alt="")
+						img(src="img/slide-2.png" alt="")
+						img(src="img/slide-1.png" alt="")
+					button(type="button" class="reviews-slider-prev")
+						svg(x="0px" y="0px" width="40px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve")
+							g
+								g(id="chevron-left")
+									polygon(points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153")
+					button(type="button" class="reviews-slider-next")
+						svg(x="0px" y="0px" width="40px" viewBox="0 0 306 306" style="enable-background:new 0 0 306 306;" xml:space="preserve")
+							g
+								g(id="chevron-right")
+									polygon(points="94.35,0 58.65,35.7 175.95,153 58.65,270.3 94.35,306 247.35,153")
+		section.main-contacts
+			.box.flex-column
+				h4.title Є питання? Напишіть нам:
+				form(action="" method="POST" class="contacts-form d-flex flex-wrap" id="contacts-form")
+					input(type="text" name="name" placeholder="Ваше ім'я")
+					input(type="text" name="email" placeholder="Ваш e-mail")
+					input(type="text" name="phone" placeholder="Ваш телефон")
+					textarea(name="message" placeholder="Текст")
+					button(type="submit" class="lavender-btn m0-auto") Відправити
+		section.contacts-map
+			.main-contacts-map
+				iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40612.848839534476!2d30.416702250663462!3d50.49131725269405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cd90b4cdcdcb%3A0xa8479fce09c1f168!2z0J_QvtC00L7Qu9GM0YHQutC40Lkg0YDQsNC50L7QvSwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1613691151610!5m2!1sru!2sua" width="100%" height="550px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0")
+			.box.flex-column
+				.contacts-map-info.d-flex.flex-column.justify-center
+					span.adress Україна, Полтавська область, м. Полтава, м-р Рибці, вул. Володимира Степанюка 54.
+					a(href="tel:380982207270" class="d-flex ai-center")
+						img(src="img/phone.png", alt="")
+						span +38 (098) 220-72-70
+					a(href="mailto:info@lavander.top" class="d-flex ai-center")
+						img(src="img/email.png", alt="")
+						span info@lavander.top
+					span.social Ми у соц мережах:
+					.d-flex.ai-center.contacts-map-social
+						a(href="")
+							img(src="img/whatsapp.png", alt="")
+						a(href="")
+							img(src="img/facebook.png", alt="")
+						a(href="")
+							img(src="img/instagram.png", alt="")
+		section.main-consult
+			.box.flex-column
+				span.main-consult-text Ви знаходитеся на сторінці професіоналів, які займаються вирощуванням вузьколистої лаванди. У нашому інтернет-магазині Ви можете дізнатися всі деталі вирощування лаванди.
+				span.main-consult-text У розділі “продукція” можете знайти та замовити саджанці лаванди, лавандову олію, лавандові букети та багато інших дарів лавандової планети.
+				span.main-consult-title ВАМ ПОТРІБНА КОНСУЛЬТАЦІЯ?
+				span.main-consult-subtitle Напишіть нам у месенджери:
+				.d-flex.ai-center.justify-center.main-consult-social
+					a(href="")
+						img(src="img/whatsapp.png", alt="")
+					a(href="")
+						img(src="img/facebook.png", alt="")
+					a(href="")
+						img(src="img/instagram.png", alt="")
+				span.main-consult-phone або зателефонуйте за номером +38 (098) 220-72-70
+		section.main-dropshipping
+			.box.flex-column
+				.dropshipping-box
+					img(src="img/drop-lavender.png", alt="" class='dropshipping-box-lavender')
+					.dropshipping-box-info.d-flex.ai-center 
+						img(src="img/drop.png", alt="")
+						.dropshipping-box-info-text.d-flex.flex-column
+							span Дропшипинг. Лаванда і перспективний бізнес
+							a(href="" class="lavender-btn d-flex ai-center mr-auto") докладніше про Дропшиппінг
+				.text-section
+					p Ласкаво просимо у Лавандову Мануфактуру – оптово-роздрібний інтернет-магазин 
+						| саджанців лаванди для Вашого саду, подарунків та задоволення!
+					p Запрошуємо прогулятися по нашому каталогу – в асортименті представлені 
+						| саджанці лаванди, сушені букети, добрива для догляду за лавандою.
+					p Якщо ви плануєте поповнити свою садову колекцію популярними сортами або новинками 
+						| селекції, хочете купити лаванду відмінної якості з гарантією приживлюваності, рекомендуємо оформити 
+						| замовлення у нашому магазині.
+					p 
+						b Вибирайте не поспішаючи, щоб раділа душа.
+					p Ми вважаємо, що вибирати саджанці лаванди потрібно неспішно, порівнюючи ціни, сорти і 
+						| вибираючи для себе найкраще. Бажано, щоб весь посадковий матеріал можна було купити в 
+						| одному місці, де подбають про дбайливу та своєчасну відправку і надішлють те, що Ви купили.
+					p 
+						b Саме так ми і працюємо:
+					ul
+						li – Тщетно контролюємо оптові замовлення без пересортиці і точно за рахунком.
+						li – Бережно пакуємо рослини за спеціальною технологією, щоб вони не страждали від пересилання.
+						li – Відправляємо точно за терміном згідно з побажаннями покупця.
+					p Знайомтеся з нашим ассортиментом в каталозі магазина і оформляйте замовлення, коли будете готові до покупки.
+					p 
+						b Чим іще ми пишаємося
+					p Ми дуже виросли за останні роки – збільшили кількість вирощеної продукції у два рази, 
+						| поліпшили контроль за якістю, створили службу підтримки, щоб допомагати нашим покупцям на 
+						| кожному кроці оформлення покупки.
+					p 
+						b Ми пропонуємо клієнтам:
+					ul
+						li – Саджанці лаванди однорічні
+						li – Саджанці лаванди дворічні
+						li – Букети лаванди оптом та у роздріб
+					p Не забувайте про наші сторінки у соц мережах – Viber, Facebook та Instagram. Підписуйтесь на них 
+						| і отримуйте корисні поради, оповіщення про нові акції та персональні знижки в зручному для вас форматі.
+					p
+						b Як замовити букети та саджанці лаванди в інтернет-магазині Лавандова Мануфактур
+					p Зробіть замовлення на посадковий матеріал – вибирайте потрібні товари, складайте їх у корзину і потім 
+						| оформляйте замовлення, заповнюючи усі поля в онлайн-анкеті покупця. Купити букети, саджанці та інший 
+						| посадковий матеріал можна і по телефону +38 (098) 220-72-70. Доставка посилок 
+						| із посадковим матеріалом проводиться Новою Поштою, оплата банківською картою або перерахуванням на 
+						| рахунок – як Вам зручніше. Географія доставки букетів та саджанців лаванди – вся Україна.
