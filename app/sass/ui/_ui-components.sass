@@ -171,6 +171,7 @@ body .content-wrapper .bold
       margin-right: 0px
     & img
       margin-right: 20px
+      max-width: 80px
     & span
       font-size: 16px
       font-weight: 500
@@ -220,3 +221,46 @@ body .content-wrapper .text-center
   & ul,
   & ol
     margin-bottom: 15px
+  
+.simple-page-banner
+  background-image: url(../img/simple-page-banner.png)
+  background-size: initial
+  background-position: top center
+  background-repeat: no-repeat
+  padding: 70px 0px 140px 0px
+  &.search
+    background-image: url(../img/search-banner.png)
+  &-title
+    text-shadow: 1.5px 2.6px 5px rgba(3, 3, 3, 0.25)
+    font-size: 40px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.2
+    letter-spacing: normal
+    text-align: center
+    color: #ffffff
+    text-transform: uppercase
+
+.breadcrumbs
+  margin-bottom: 45px
+  & li,
+  & li a
+    font-size: 14px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: 6.14
+    letter-spacing: normal
+    text-align: left
+    color: #292929
+  & li a:hover
+    color: $lavender
+  &-item
+    margin-right: 10px
+
+.simple-page
+  & .main-production
+    &::before
+      content: ''
+      display: none
