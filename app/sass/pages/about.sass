@@ -1,0 +1,37 @@
+.about-company
+  .main-advantages
+    background-size: 100% 100%
+  &-first
+    margin-bottom: 20px
+    & img
+      float: left
+      margin-right: 50px
+  & .text-section-title
+    margin-bottom: 70px
+  & .text-section
+    background-image: url(../img/about-company-bg.png)
+    background-size: initial
+    background-position: top right
+    background-repeat: no-repeat
+  &-delivery
+    max-width: 500px
+    width: 100%
+    margin-right: 100px
+
+@media(max-width: 700px) 
+  .about-company-delivery
+    width: 100%
+    margin-right: 0px
+    margin-bottom: 20px
+  .about-company-info
+    align-items: initial
+    flex-direction: column
+    & .text-section-title
+      margin-bottom: 30px
+  .about-company-first img
+    float: none
+    max-width: 115px
+    margin: 0px auto 15px auto
+  .about-company-first
+    display: flex
+    flex-direction: column
