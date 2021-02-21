@@ -1,0 +1,140 @@
+.product-page
+  margin-bottom: 80px
+  &-carousel
+    max-width: 555px
+    width: 100%
+    margin-right: 30px
+  & .product-carousel-for
+    max-width: 555px
+    max-height: 555px
+    & .slick-slide img
+      max-width: 500px
+      max-height: 500px
+      display: block !important
+      margin: 0 auto
+      object-fit: contain
+      width: auto !important
+  & .product-carousel-nav
+    height: 109px
+    margin-top: 20px
+    & .slick-slide
+      width: 109px
+      height: 109px
+      border: solid 1px #ececec
+      margin-right: 20px
+      & img
+        width: 100px !important
+        height: 100px
+        object-fit: contain
+  &-name
+    font-size: 25px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #22232c
+    margin-bottom: 30px
+    display: inline-block
+  & .product-page-name-mobile
+    font-size: 25px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #22232c
+    margin-bottom: 30px
+    display: none
+  &-descr
+    font-size: 14px
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #22232c
+    margin-bottom: 30px
+  &-price
+    font-size: 25px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: left
+    color: #8a3fb5
+    margin-bottom: 30px
+    display: inline-block
+  & .product-form
+    & #product-form-counter
+      width: 94px
+      height: 47px
+      padding: 10px
+      border: solid 1px #ececec
+      background-color: #ffffff
+      margin-right: 20px
+      font-size: 18px
+      font-weight: 500
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      text-align: center
+      color: #393b48
+    & .lavender-btn
+      padding: 14px 40px
+      font-size: 16px
+      font-weight: 500
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      text-align: center
+      color: #ffffff
+.products-box.familiar-products
+  & .product-item
+    &:nth-of-type(3n)
+      margin-right: 0px
+@media(max-width: 1024px)
+  .products-box.familiar-products .product-item
+    margin-right: 30px
+@media(max-width: 991px)
+  .product-page
+    & .box
+      flex-direction: column
+  .product-page .product-page-name-mobile
+    display: inline-block
+  .product-page-carousel
+    margin-bottom: 40px
+  .product-page-name
+    display: none
+  h3.title
+    margin-bottom: 20px
+    font-size: 32px
+  .products-box.familiar-products .product-item
+    &:nth-of-type(3n)
+      margin-right: 30px
+    &:nth-of-type(2n)
+      margin-right: 0px
+  .products-box.familiar-products .box
+    flex-direction: initial
+@media(max-width: 757px)
+  .product-page .product-carousel-for
+    max-width: 350px
+    max-height: 350px
+  .product-page .product-carousel-for .slick-slide img
+    max-width: 300px
+    max-height: 300px
+  .product-page .product-carousel-nav .slick-slide img
+    max-width: 60px
+    max-height: 60px
+    display: block !important
+    margin: 0 auto
+  .product-page .product-carousel-nav .slick-slide
+    height: 65px
+  .product-page-carousel
+    margin-bottom: 0px
