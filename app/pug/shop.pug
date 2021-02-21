@@ -1,0 +1,117 @@
+extends blocks/_layout-simple
+append content
+  main.main.shop-page
+    .simple-page-banner.shop
+      .box.d-flex.ai-center.justify-center
+        h1.simple-page-banner-title.ml-auto магазин
+        a(href="/" class="cart-banner-info ml-auto d-flex ai-center justify-center")
+          img(src="img/cart-icon.png" alt="" class="cart-ico")
+          p
+            span.cart-banner-info-summ 150.00 грн
+            | /
+            span.cart-banner-info-count 2 тов
+          img(src="img/cart-right.png" alt="" class="cart-right")
+    .box.d-flex.flex-column
+      ul.breadcrumbs.d-flex.ai-center.flex-wrap
+        li.breadcrumbs-item
+          a(href="/") Головна
+        li.breadcrumbs-item.separator /
+        li.breadcrumbs-item.current Магазин
+    section.products-box
+      .box.ai-start
+        ul.products-filter.d-flex.flex-column
+          span.products-filter-mobile Букети
+          li.products-filter-item
+            a(href="/" class="d-flex ai-center justify-center") Усі_товари
+          li.products-filter-item
+            a(href="/" class="d-flex ai-center justify-center") Саджанці
+          li.products-filter-item
+            a(href="/" class="d-flex ai-center justify-center") Букети
+          li.products-filter-item
+            a(href="/" class="d-flex ai-center justify-center") Добрива
+          li.products-filter-item.active
+            a(href="/" class="d-flex ai-center justify-center") Мед
+          li.products-filter-item
+            a(href="/" class="d-flex ai-center justify-center") Набори
+          li.products-filter-item
+            a(href="/" class="d-flex ai-center justify-center") Олія
+          li.li.products-filter-item
+            a(href="/" class="d-flex ai-center justify-center") Саше Свічки
+        select(class="products-filter-select")
+          option(value="Усі_товари") Усі_товари
+          option(value="Саджанці") Саджанці 
+          option(value="Букети") Букети
+          option(value="Добрива") Добрива
+          option(value="Мед") Мед
+          option(value="Набори") Набори
+          option(value="Олія") Олія
+          option(value="Саше Свічки") Саше Свічки
+        .products-wrap.d-flex.flex-wrap
+          .product-item.d-flex.flex-column
+            .product-item-img.d-flex.justify-center.ai-center
+              img(src="img/prod-1.png" alt="")
+            .product-item-info.d-flex.flex-column
+              span.product-item-name Олія Натуральна Лаванди (100мл)
+              span.product-item-tag Олія
+              span.product-item-price 900.00 грн
+              a(href="/" class="lavender-btn") Подробнее
+          .product-item.d-flex.flex-column
+            .product-item-img.d-flex.justify-center.ai-center
+              img(src="img/prod-2.png" alt="")
+            .product-item-info.d-flex.flex-column
+              span.product-item-name Олія Натуральна Лаванди (15мл)
+              span.product-item-tag Олія
+              span.product-item-price 150.00 грн
+              a(href="/" class="lavender-btn") Подробнее
+          .product-item.d-flex.flex-column
+            .product-item-img.d-flex.justify-center.ai-center
+              img(src="img/prod-3.png" alt="")
+            .product-item-info.d-flex.flex-column
+              span.product-item-name Свічки ручної роботи з вощини
+              span.product-item-tag Олія
+              span.product-item-price 40.00 грн
+              a(href="/" class="lavender-btn") Подробнее
+          .product-item.d-flex.flex-column
+            .product-item-img.d-flex.justify-center.ai-center
+              img(src="img/prod-1.png" alt="")
+            .product-item-info.d-flex.flex-column
+              span.product-item-name Олія Натуральна Лаванди (100мл)
+              span.product-item-tag Олія
+              span.product-item-price 900.00 грн
+              a(href="/" class="lavender-btn") Подробнее
+          .product-item.d-flex.flex-column
+            .product-item-img.d-flex.justify-center.ai-center
+              img(src="img/prod-2.png" alt="")
+            .product-item-info.d-flex.flex-column
+              span.product-item-name Олія Натуральна Лаванди (15мл)
+              span.product-item-tag Олія
+              span.product-item-price 150.00 грн
+              a(href="/" class="lavender-btn") Подробнее
+          .product-item.d-flex.flex-column
+            .product-item-img.d-flex.justify-center.ai-center
+              img(src="img/prod-3.png" alt="")
+            .product-item-info.d-flex.flex-column
+              span.product-item-name Свічки ручної роботи з вощини
+              span.product-item-tag Олія
+              span.product-item-price 40.00 грн
+              a(href="/" class="lavender-btn") Подробнее
+    section.main-advantages
+      .box.flex-column
+        h3.title  НАШІ ПЕРЕВАГИ
+        .advantages-items.d-flex.ai-center.space-between
+          .advantage-item.d-flex.flex-column.ai-center
+            img(src="img/adv-1.png" alt="")
+            span.advantage-item-title ВЛАСНЕ ВИРОБНИЦТВО
+            span.advantage-item-text Вирощуємо на власних екологічно чистих полях, на яких грунт обробляється вручну та частково механічно.
+          .advantage-item.d-flex.flex-column.ai-center
+            img(src="img/adv-2.png" alt="")
+            span.advantage-item-title ВИСОКИЙ РІВЕНЬ СЕРВІСУ
+            span.advantage-item-text Дозволяє вести постійний контроль якості на всіх етапах вирощування, зберігання, фасування та пакування лаванди.
+          .advantage-item.d-flex.flex-column.ai-center
+            img(src="img/adv-3.png" alt="")
+            span.advantage-item-title ГАРАНТІЯ ЯКОСТІ
+            span.advantage-item-text Ми використовуємо передові технології у вирощуванні лаванди та зберіганні готовоії продукції.
+          .advantage-item.d-flex.flex-column.ai-center
+            img(src="img/adv-4.png" alt="")
+            span.advantage-item-title Висока ВІДПОВІДАЛЬНІСТЬ
+            span.advantage-item-text За весь час ми зарекомендували себе як надійний виробник, з яким варто довгостроково співпрацювати.
