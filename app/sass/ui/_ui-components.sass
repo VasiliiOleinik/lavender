@@ -232,6 +232,8 @@ body .content-wrapper .text-center
     background-image: url(../img/search-banner.png)
   &.hydrolat
     background-image: url(../img/hydrolat-bg.png)
+  &.drop
+    background-image: url(../img/drop-banner-bg.png)
   &-title
     text-shadow: 1.5px 2.6px 5px rgba(3, 3, 3, 0.25)
     font-size: 40px
@@ -411,3 +413,55 @@ body .content-wrapper .text-center
     & .lavender-btn
       width: 100%
       padding: 15px
+.error-page
+  background-image: url(../img/error-page-bg.png)
+  background-size: initial
+  background-position: top center
+  background-repeat: no-repeat
+  &-text
+    font-size: 25px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #22232c
+    margin-bottom: 60px
+  &-code
+    position: relative
+  &-lower-text
+    font-size: 374.5px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #f6f6f6
+    position: relative
+    &::after
+      content: url(../img/error-bear.png)
+      position: absolute
+      z-index: -1
+      right: -65px
+      top: -86px
+  &-upper-text
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    background-image: linear-gradient(to top, rgba(122, 68, 220, 1), #8a3fb5), linear-gradient(to bottom, #22232c, #22232c)
+    font-size: 251px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: normal
+    text-align: center
+    color: #22232c
+    -webkit-background-clip: text
+    background-clip: text
+    -webkit-text-fill-color: transparent
+  & .lavender-btn
+    margin-bottom: 100px

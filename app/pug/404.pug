@@ -1,0 +1,19 @@
+extends blocks/_layout-simple
+append content
+  main.main.error-page
+    .simple-page-banner.search
+      .box.d-flex.flex-column.ai-center.justify-center
+        h1.simple-page-banner-title 404 ERROR
+    .box.d-flex.flex-column
+      ul.breadcrumbs.d-flex.ai-center.flex-wrap
+        li.breadcrumbs-item
+          a(href="/") Головна
+        li.breadcrumbs-item.separator /
+        li.breadcrumbs-item.current 404 ERROR
+    section.error-page-content
+      .box.flex-column.ai-center.justify-center
+        p.error-page-text Сторінка на яку ви перейшли - не існує
+        .error-page-code
+          p.error-page-lower-text 404
+          p.error-page-upper-text 404
+        a(href="/" class="lavender-btn d-flex ai-center m0-auto") НА ГОЛОВНУ 
