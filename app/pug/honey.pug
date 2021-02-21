@@ -1,0 +1,108 @@
+extends blocks/_layout-simple
+append content
+  main.main.bouquet-page
+    .simple-page-banner.hydrolat
+      .box.d-flex.flex-column.ai-center.justify-center
+        h1.simple-page-banner-title Лавандовый мед
+    .box.d-flex.flex-column
+      ul.breadcrumbs.d-flex.ai-center.flex-wrap
+        li.breadcrumbs-item
+          a(href="/") Головна
+        li.breadcrumbs-item.separator /
+        li.breadcrumbs-item.current Продукція з лаванди
+        li.breadcrumbs-item.separator /
+        li.breadcrumbs-item.current Лавандовый мед
+    section.text-section
+      .box.flex-column
+        .photosession-page-content
+          img(src="img/honey-img-1.png" class="img-left")
+          br
+          br
+          br
+          h4 Лавандовый мед
+          br
+          p Золотий сяючий вміст баночки з лавандовим медом здається рідким сонячним світлом, концентрованим літом. Дивлячись на густу 
+            | ароматну субстанцію, можна майже відчути тепло спекотного сонця і почути дзижчання працьовитих бджіл...
+            br
+            | Який мед має право називатися лавандовим? Це мед, зібраний з квітучих рожево-бузкових ланів – такий, в якому доля нектару, зібраного 
+            | бджолами саме з квітів лаванди значно перевищує інші.
+            | Для того, щоб збільшити відсоток лаванди в меді, пасічникам треба дуже постаратися. По-перше, пасіка повинна бути розташована 
+            | в центрі доглянутого без обробки хімікатами поля, де крім лаванди не росте інших медоносів. По-друге, обсяг цвітіння і 
+            | багатство врожаю повинні дозволяти за 2-3 тижні цвітіння лаванди накопичити достатню кількість меду. Збирають його з травня по початок вересня.
+            | Саме господарство Лавандова Мануфактура, яке ретельно досліджує умови, технології та якість продукції, виробляє справжній 
+            | лавандовий мед, смак якого не сплутати ні з яким іншим. Навіть досвідчені цінителі, а часом і скептики із захопленням 
+            | відзначають його неповторний, незабутній смак з терпким і пряним лавандовим післясмаком.
+          br
+          br
+          img(src="img/honey-img-2.png", alt="" class="img-right")
+          h4 Чим корисний?
+          br
+          p Мед з лаванди містить ферментований квітковий нектар, пилок з лавандових тичинок, близько 200 активних інгредієнтів: вуглеводів, вітамінів 
+            | (особливо багато вітамінів групи B), мінералів, ферментних комплексів, інші корисні концентровані компоненти.
+            br
+            | Гурмани цінують цей мед не тільки за унікальний смаковий букет, але і лікувальні властивості, які активізовані бджолами перейшли до 
+            | нього від рослини. Регулярне вживання такого продукту бджільництва дозволяє поліпшити стан при захворюваннях серця, нервової 
+            | cистеми, шкіри, ендокринної системи та органів травлення.
+            br
+            | Протипоказання. При вживанні лавандового меду слід бути обережними, якщо в анамнезі були алергічні захворювання, астма.
+          p У господарство Лавандова Мануфактура можна не тільки купити лаванду в Україні, але ж і найкращій чистий лавандовий мед – 
+            | смачний і корисний. Професійні спеціалісти ретельно доглядають саджанці лаванди, піклуються про бджіл – усе для того, 
+            | щоб отримати концентровану насолоду у баночці меду.
+
+          br
+          br
+          br
+    section.products-box 
+      .box.justify-center.ai-center.flex-wrap 
+        .product-item.d-flex.flex-column
+          .product-item-img.d-flex.justify-center.ai-center
+            img(src="img/honey.png", alt="")
+          .product-item-info.d-flex.flex-column
+            span.product-item-name Лавандовий натуральний мед
+            span.product-item-tag Мед
+            span.product-item-price 150.00 грн
+            a(href="/" class="lavender-btn") Подробнее
+        .product-item.d-flex.flex-column
+          .product-item-img.d-flex.justify-center.ai-center
+            img(src="img/honey.png", alt="")
+          .product-item-info.d-flex.flex-column
+            span.product-item-name Лавандовий натуральний мед
+            span.product-item-tag Мед
+            span.product-item-price 150.00 грн
+            a(href="/" class="lavender-btn") Подробнее
+    section.main-contacts
+      .box.flex-column
+        h4.title Для співпраці, консультації та замовлення напишіть нам:
+        form(action="" method="POST" class="contacts-form d-flex flex-wrap" id="contacts-form")
+          input(type="text" name="name" placeholder="Ваше ім'я")
+          input(type="text" name="email" placeholder="Ваш e-mail")
+          input(type="text" name="phone" placeholder="Ваш телефон")
+          textarea(name="message" placeholder="Текст")
+          button(type="submit" class="lavender-btn m0-auto") Відправити
+    section.main-production
+      .box.flex-column
+        .little-cards.d-flex.flex-wrap
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-1.png" alt="")
+            span  Саджанці лаванди
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-2.png" alt="")
+            span  Олія лаванди
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-3.png" alt="")
+            span  Гідролат лаванди
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-4.png" alt="")
+            span  Букети лаванди
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-5.png" alt="")
+            span  Лавандовий мед
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-6.png" alt="")
+            span  Лавандові наборы
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-7.png" alt="")
+            span  Лавандове Саше
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-8.png" alt="")
+            span  Свічки з вощини

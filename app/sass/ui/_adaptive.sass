@@ -19,6 +19,17 @@
     margin-bottom: 50px
   .about-company .main-advantages
     background-size: initial
+  .contacts-form input
+    width: 31%
+  .contacts-form input
+    width: 100%
+    margin-right: 0px
+    margin-bottom: 15px
+  .contacts-form textarea
+    margin-top: 0px
+    margin-bottom: 20px
+  .main-contacts
+    margin-bottom: 30px
 
 @media(max-width: 767px)
   h3.title
@@ -35,7 +46,8 @@
     &-links,
     &-products
       width: 50%
-    &-contacts 
+      padding: 0px 5px
+    &-contacts
       width: 100%
       margin-top: 40px
   .header-search
@@ -70,9 +82,22 @@
       max-width: 360px
   .main-advantages
     margin-bottom: 0px
+  .products-box .product-item
+    margin-right: 30px
+    margin-bottom: 30px
+    &:nth-of-type(2n)
+      margin-right: 0px !important
+  .products-box .product-item:last-of-type
+    margin-right: 30px
+@media(max-width: 660px)
+  .products-box .product-item,
+  .products-box .product-item:last-of-type
+    margin-right: 0px !important
+  .products-box .product-item,
+    width: 320px
 @media(max-width: 500px)
   .little-cards .little-card
-    width: 100%w
+    width: 100%
     margin-right: 0px !important
     margin-bottom: 15px
     padding-top: 15px
@@ -80,3 +105,9 @@
 @media(max-width: 450px)
   .reviews-slider-box
     max-width: 320px
+  .text-section
+    & img
+      display: block
+      margin: 10px auto !important
+      float: none !important
+
