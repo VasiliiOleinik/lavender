@@ -322,6 +322,8 @@ body .content-wrapper .text-center {
     background-image: url(../img/drop-banner-bg.png); }
   .simple-page-banner.shop {
     background-image: url(../img/shop-banner.png); }
+  .simple-page-banner.seedlings {
+    background-image: url(../img/seedlings-bg.png); }
   .simple-page-banner-title {
     text-shadow: 1.5px 2.6px 5px rgba(3, 3, 3, 0.25);
     font-size: 40px;
@@ -1790,6 +1792,48 @@ body .content-wrapper .text-center {
 
 .search-page-body {
   margin-bottom: 200px; }
+
+.best-propose.seedlings .best-propose-lavender-img {
+  left: 31px;
+  top: -27px;
+  max-width: 180px; }
+
+.lavender-important {
+  margin-bottom: 40px; }
+  .lavender-important img {
+    margin-right: 40px; }
+
+@media (max-width: 1199px) {
+  .best-propose.seedlings .best-propose-lavender-img {
+    max-width: 130px;
+    left: 0; }
+  .best-propose.seedlings .best-propose-info {
+    padding-left: 150px; } }
+
+@media (max-width: 991px) {
+  .best-propose.seedlings .best-propose-subtitle {
+    margin-left: 0px; } }
+
+@media (max-width: 850px) {
+  .seedlings-page .products-box .product-item {
+    margin-right: 0px; } }
+
+@media (max-width: 767px) {
+  .lavender-important {
+    margin-bottom: 40px; }
+    .lavender-important .box {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .lavender-important img {
+      margin-right: 0;
+      margin-bottom: 40px; } }
+
+@media (max-width: 500px) {
+  .best-propose.seedlings .best-propose-lavender-img {
+    top: 10px; } }
 
 .shop-page .cart-banner-info {
   width: 215px;

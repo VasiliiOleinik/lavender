@@ -1,0 +1,136 @@
+extends blocks/_layout-simple
+append content
+  main.main.seedlings-page
+    .simple-page-banner.seedlings
+      .box.d-flex.flex-column.ai-center.justify-center
+        h1.simple-page-banner-title Саджанці Лаванди
+    .box.d-flex.flex-column
+      ul.breadcrumbs.d-flex.ai-center.flex-wrap
+        li.breadcrumbs-item
+          a(href="/") Головна
+        li.breadcrumbs-item.separator /
+        li.breadcrumbs-item.current Саджанці Лаванди
+    section.best-propose.seedlings.d-flex.flex-column
+      .box.flex-column
+        .best-propose-info.d-flex.flex-column
+          img(src="img/best-propose.png" alt="" class="best-propose-lavender-img" data-aos="fade-right")
+          span.best-propose-subtitle Саджанці лаванди однорічні
+          .best-propose-box.d-flex.ai-center
+            button.best-propose-btn(type="button")
+              span от 20 шт. -
+                span.bold 15 грн
+                | за 1шт.
+            button.best-propose-btn(type="button")
+              span опт от 1000 шт.
+                span.bold 7 грн
+                | за 1шт.
+        .best-propose-calc
+          .propose-calc-title.d-flex.ai-center
+            img(src="img/calc.png" alt="")
+            span Калькулятор кол-ва саженцев:
+          .propose-calc-block.d-flex.ai-center
+            .propose-calc-items.d-flex.flex-column
+              .propose-calc-item.d-flex-ai-center
+                span  Ширина участка (метров):
+                input(type="text" id="area-width" value="1")
+              .propose-calc-item.d-flex-ai-center
+                span  Длина участка (метров):
+                input(type="text" id="area-height" value="1")
+            img(src="img/arrow-right.png" alt="" class="calc-arrow-separator")
+            .propose-calc-result.d-flex.flex-column
+              span.propose-calc-result-title Вам необходимо
+                span.bold#calc-result 1535
+                | саженцев
+              span.propose-calc-text За умови 40см між кущами і 140см між рядами
+              button(type="button" class="lavender-btn d-flex ai-center m0-auto") Заказать
+          .propose-calc-info.d-flex.ai-center
+            img(src="img/info.png" alt="")
+            p.d-flex.flex-column
+              span Рекомендуемая дистанция между кустами
+                span.bold 35-70см
+              span Рекомендуемая дистанция между рядами
+                span.bold 100-160см
+    section.products-box
+      h4.title.text-center Саджанці Лаванди
+      .box.justify-center.ai-center.flex-wrap 
+        .product-item.d-flex.flex-column
+          .product-item-img.d-flex.justify-center.ai-center
+            img(src="img/lavender-prod-1.png" alt="")
+          .product-item-info.d-flex.flex-column
+            span.product-item-name Саджанці лаванди вузьколистої Хемус однорічні
+            span.product-item-tag Саджанці
+            span.product-item-price 15.00 грн
+            a(href="/" class="lavender-btn") Подробнее
+        .product-item.d-flex.flex-column
+          .product-item-img.d-flex.justify-center.ai-center
+            img(src="img/lavender-prod-2.png" alt="")
+          .product-item-info.d-flex.flex-column
+            span.product-item-name Саджанці лаванди вузьколистої Хемус дворічні
+            span.product-item-tag Саджанці
+            span.product-item-price 15.00 грн
+            a(href="/" class="lavender-btn") Подробнее
+        .product-item.d-flex.flex-column
+          .product-item-img.d-flex.justify-center.ai-center
+            img(src="img/lavender-prod-3.png" alt="")
+          .product-item-info.d-flex.flex-column
+            span.product-item-name Саджанці лаванди англійської officinale однорічні
+            span.product-item-tag Саджанці
+            span.product-item-price 15.00 грн
+            a(href="/" class="lavender-btn") Подробнее
+    section.products-box 
+      h4.title.text-center Оптові позиції:
+      .box.justify-center.ai-center.flex-wrap 
+        .product-item.d-flex.flex-column
+          .product-item-img.d-flex.justify-center.ai-center
+            img(src="img/lavender-prod-3.png" alt="")
+          .product-item-info.d-flex.flex-column
+            span.product-item-name Саджанці лаванди вузьколистої Хемус однорічні
+            span.product-item-tag Саджанці
+            span.product-item-price 7.00 грн
+            a(href="/" class="lavender-btn") Подробнее
+        .product-item.d-flex.flex-column
+          .product-item-img.d-flex.justify-center.ai-center
+            img(src="img/lavender-prod-3.png" alt="")
+          .product-item-info.d-flex.flex-column
+            span.product-item-name Саджанці лаванди вузьколистої Хемус однорічні
+            span.product-item-tag Саджанці
+            span.product-item-price 7.00 грн
+            a(href="/" class="lavender-btn") Подробнее
+        .product-item.d-flex.flex-column
+          .product-item-img.d-flex.justify-center.ai-center
+            img(src="img/lavender-prod-3.png" alt="")
+          .product-item-info.d-flex.flex-column
+            span.product-item-name Саджанці лаванди вузьколистої Хемус однорічні
+            span.product-item-tag Саджанці
+            span.product-item-price 7.00 грн
+            a(href="/" class="lavender-btn") Подробнее
+    section.lavender-important
+      h4.title.text-center Важливо про лаванду:
+      .box.ai-start
+        img(src="img/creator.png", alt="")
+        section.text-section.d-flex.flex-column 
+          p Ми, фермерське господарство сімейного типу 
+            b «Лавандова Мануфактура», 
+            | з 2019 року займаємося активним вирощуванням лаванди ангустифолія. Територіально знаходимося в центральній Україні - м. Полтава. 
+          p Два сезони відправлень посадкового матеріалу лаванди: 
+          ul 
+            li Весняний 
+            li Осінній. 
+          p Весняний етап розпочинається під кінець березня, коли зимові морози вже покинули нашу місцевість і температура повітря 
+            | стабільно тримається на позначці 10С вище нуля, продовжується етап відправлень до кінця квітня. Для того щоб забежпечити 
+            | людей якісним посадковим матеріалом лаванди, ми на власному досвіді практикували свої навички вирощування лаванди та доводимо 
+            | до ідеалу всі механізми праці. Садити лаванду в кінці травня, коли вже досить жарко, критично ризиково, та все ж таки бажано 
+            | дивитися по погоді у вашому регіоні.
+          p Осіння відправка розпочинається з кінця вересня місяця і триває до серидини листопада. 
+          p Особливу увагу ми приділяємо транспортуванню саджанців. День в день ми копаємо, щільно запаковуємо корені у пакет, 
+            | щоб було мінімальне потрапляння повітря. У такій надійній упаковці рослини можуть транспортуватись до 7 днів. 
+          p Швидка відправка саджанців здійснюється транспортно – логістичною компанією Нова Пошта, термін пересилки по 
+            | всій Україні від 
+            b 1 до 3 днів. 
+            |Відправка з міста Полтава, також якщо ви з найближчих міст Києва, Харкова, Дніпра, Кропивницького, Сум, Кременчука та інших, ви можете 
+            | забрати замовлення самовивозом.
+          p Після отримання корчів на пошті, бажано ознайомитися з інструкцією відносно посадки рослини (яку ми прикладаємо до посилки) та 
+            | замочити на 2 години коріння у воду з укорінювачем. 
+          p Важливо памятати, що це живі рослини, вони потребують догляду та любові. Лаванда вузьколиста має велику перспективу для вирощування на территорії 
+            | Україні. За два роки наше фермерське господарство виростило більше 300 тисяч кущів, котрі були посаджені як у присадибних 
+            | ділянках так і у великих парках, такий як Добро Парк.
