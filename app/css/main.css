@@ -401,7 +401,7 @@ body .content-wrapper .text-center {
   display: inline-block; }
 
 .text-section ul {
-  margin-left: 25px; }
+  margin-left: 0px; }
   .text-section ul li {
     list-style: none;
     font-size: 14px;
@@ -1558,27 +1558,30 @@ body .content-wrapper .text-center {
     width: 100%;
     padding: 0px; } }
 
-.difference-lavender img {
+.double-lavender img {
   max-width: 540px;
   width: 100%; }
 
-.difference-lavender-left {
-  padding-right: 20px; }
+.double-lavender-left {
+  padding-right: 20px;
+  max-width: 50%; }
 
-.difference-lavender-right {
-  padding-left: 20px; }
+.double-lavender-right {
+  padding-left: 20px;
+  max-width: 50%; }
 
 @media (max-width: 660px) {
-  .difference-lavender {
+  .double-lavender {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column; }
-    .difference-lavender img {
+    .double-lavender img {
       width: 100%; }
-    .difference-lavender-right, .difference-lavender-left {
-      padding: 0px; } }
+    .double-lavender-right, .double-lavender-left {
+      padding: 0px;
+      max-width: initial; } }
 
 .photosession-page {
   background-image: url(../img/photosession-bg.png);

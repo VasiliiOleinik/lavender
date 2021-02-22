@@ -1,0 +1,101 @@
+extends blocks/_layout-simple
+append content
+  main.main.bouquet-page
+    .simple-page-banner.drop
+      .box.d-flex.flex-column.ai-center.justify-center
+        h1.simple-page-banner-title Розмноження лаванди
+    .box.d-flex.flex-column
+      ul.breadcrumbs.d-flex.ai-center.flex-wrap
+        li.breadcrumbs-item
+          a(href="/") Головна
+        li.breadcrumbs-item.separator /
+        li.breadcrumbs-item.current Все про лаванду
+        li.breadcrumbs-item.separator /
+        li.breadcrumbs-item.current Розмноження лаванди
+    section.text-section
+      .box.flex-column
+        .photosession-page-content
+          h4 Розмноження лаванди
+          br
+          br
+          .d-flex.space-between.double-lavender
+            .double-lavender-left.d-flex.flex-column
+              h5 Вирощування лаванди із насіння
+              br
+              img(src="img/reproduction-1.png", alt="")
+              br
+              p Насправді є значення, коли ви посієте насіння лаванди в грунт. Все залежить від вашої зими і це чисто індивідуальне питання, 
+                | яке відносниться до вашої геолокації. Найголовніше у цьому питанні - це період охолодження насіння - стратифікація. 
+                | Стратифікація може бути природнім шляхом, це коли ви сієте у відкритий грунт під кінець листопаду або можна залишити насіння в гаражі, 
+                | або в холодильнику, головне там, де холодно, а в березні відправити у відкритий грунт. Потім розкидати по снігу і притоптати їх. 
+                | Але у кожному є свої мінуси:
+              ul 
+                li Кінець листопада, затяжні дощі, котрі можуть насіння вимити;
+                li У грудні верхній шар грунту вже проморожений, може вітром знести насіння 
+                li в сторону, або при відтаєнні грунту знести  водою;	
+                li У вересні іще занадто тепло, насіння може прорости;
+                li Навесні - не вистачає часу для стратифікації.	
+              br
+              p А тепер секретик / спостереження:
+              ul 
+                li Обираємо сонячне і в міру вологе місце (не там, де швидше за все пересихає грунт навесні, але і застою грунтових вод не потрібно);
+                li Добре рихлимо грунт, видаляємо бур'яни, камені і тд.;
+                li Розкидаємо на поверхні грунту насіння і не закладаємо в землю.  Можна зверху покласти гілочки, щоб птахи не з'їли насіння;
+                li Ні в якому разі не присипати насіння землею, тільки розпушування граблями.  Навіть 5 см землі зроблять сходження майже неможливим;
+                li Весной, як тільки просохне кілька сантиметрів грунту, обов'язковий полив, кожен день;
+                li Якщо навесні заморозки, а лаванда проклюнулася, її потрібно вкрити на ніч, тому що маленькі паростки загинуть.
+            .double-lavender-right.d-flex.flex-column
+              h5 Вирощування лаванди з черенків
+              br
+              img(src="img/reproduction-2.png", alt="")
+              br
+              p З лютого по травень в теплиці.  В кінці зими - це живцювання одеревілих гілочок, а до травня вже зеленими.
+              p Три умови успішного живцювання лаванди:
+              ol
+                li Правильний субстрат.  Готуємо його з просіяного нейтралізованого торфу та перліту 1/1.  Субстрат зволожуємо і наповнюємо ним касети.
+                li Хороші живці.  Найкраще вкорінюється лаванда із 2-3-х літніх кущів.  Нарізаємо живці по 6-8 см, нижній зріз робимо косою, 
+                  | верх теж підрізаємо. В касеті робимо дірочки, змочуємо нижній зріз живця Укорінювачем і встромляємо в касету.
+                li Дуже важливі умови вкорінення черенків. У лютому знадобиться обігрівання теплиці і обприскування.  Але пам'ятайте, що 
+                  | лаванда дуже не любить надмірної вологи, від якої живці можуть просто згнити.  А ось в квітні-травні лаванда легко 
+                  | вкорінюється і в простому парничку.
+                li Коріння утворюється за 4-6 тижнів, після чого ми пересаджуємо її в горщики для дорощування і обов'язково прорізати, 
+                  | щоб формувався пухнастий кущик.
+          br
+          br
+          br
+    section.main-contacts
+      .box.flex-column
+        h4.title Для співпраці, консультації та замовлення напишіть нам:
+        form(action="" method="POST" class="contacts-form d-flex flex-wrap" id="contacts-form")
+          input(type="text" name="name" placeholder="Ваше ім'я")
+          input(type="text" name="email" placeholder="Ваш e-mail")
+          input(type="text" name="phone" placeholder="Ваш телефон")
+          textarea(name="message" placeholder="Текст")
+          button(type="submit" class="lavender-btn m0-auto") Відправити
+    section.main-production
+      .box.flex-column
+        .little-cards.d-flex.flex-wrap
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-1.png" alt="")
+            span  Саджанці лаванди
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-2.png" alt="")
+            span  Олія лаванди
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-3.png" alt="")
+            span  Гідролат лаванди
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-4.png" alt="")
+            span  Букети лаванди
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-5.png" alt="")
+            span  Лавандовий мед
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-6.png" alt="")
+            span  Лавандові наборы
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-7.png" alt="")
+            span  Лавандове Саше
+          a(href="/" class="little-card d-flex ai-center")
+            img(src="img/product-8.png" alt="")
+            span  Свічки з вощини
