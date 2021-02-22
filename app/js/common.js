@@ -29,4 +29,5 @@ $(function () {
     dots: false,
     focusOnSelect: true
   });
+  AOS.init();
 });

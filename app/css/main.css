@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-weight: normal;
@@ -400,10 +401,9 @@ body .content-wrapper .text-center {
   display: inline-block; }
 
 .text-section ul {
-  margin-left: 25px;
-  list-style: initial; }
+  margin-left: 25px; }
   .text-section ul li {
-    list-style: initial;
+    list-style: none;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -412,7 +412,15 @@ body .content-wrapper .text-center {
     letter-spacing: normal;
     text-align: left;
     color: #22232c;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 10px; }
+    .text-section ul li::before {
+      content: '•';
+      position: relative;
+      top: 4px;
+      left: -5px;
+      font-size: 24px; }
   .text-section ul.bad li {
     list-style-image: url(../img/read-arm.png); }
   .text-section ul.good li {
@@ -421,7 +429,7 @@ body .content-wrapper .text-center {
 .text-section ol {
   margin-left: 25px; }
   .text-section ol li {
-    list-style: initial;
+    list-style: decimal;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -466,7 +474,8 @@ body .content-wrapper .text-center {
   border: solid 1px #d0d0d0;
   background-color: #ffffff;
   margin-right: 60px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  overflow: hidden; }
   .products-box .product-item:last-of-type {
     margin-right: 0px; }
   .products-box .product-item-img {
@@ -1522,6 +1531,14 @@ body .content-wrapper .text-center {
   content: '';
   display: none; }
 
+@media (max-width: 767px) {
+  .products-box.care {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
 .main-advantages.landing {
   background-image: none;
   padding-top: 30px;
@@ -1540,6 +1557,28 @@ body .content-wrapper .text-center {
   .main-advantages.landing .advantages-items .advantage-item {
     width: 100%;
     padding: 0px; } }
+
+.difference-lavender img {
+  max-width: 540px;
+  width: 100%; }
+
+.difference-lavender-left {
+  padding-right: 20px; }
+
+.difference-lavender-right {
+  padding-left: 20px; }
+
+@media (max-width: 660px) {
+  .difference-lavender {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .difference-lavender img {
+      width: 100%; }
+    .difference-lavender-right, .difference-lavender-left {
+      padding: 0px; } }
 
 .photosession-page {
   background-image: url(../img/photosession-bg.png);

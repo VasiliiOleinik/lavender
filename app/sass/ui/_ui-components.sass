@@ -315,9 +315,8 @@ body .content-wrapper .text-center
     display: inline-block
   & ul
     margin-left: 25px
-    list-style: initial
     li
-      list-style: initial
+      list-style: none
       font-size: 14px
       font-weight: normal
       font-stretch: normal
@@ -327,6 +326,14 @@ body .content-wrapper .text-center
       text-align: left
       color: #22232c
       margin-bottom: 10px
+      position: relative
+      padding-left: 10px
+      &::before
+        content: '•'
+        position: relative
+        top: 4px
+        left: -5px
+        font-size: 24px
     &.bad
       li
         list-style-image: url(../img/read-arm.png)
@@ -336,7 +343,7 @@ body .content-wrapper .text-center
   & ol
     margin-left: 25px
     li
-      list-style: initial
+      list-style: decimal
       font-size: 14px
       font-weight: normal
       font-stretch: normal
@@ -379,6 +386,7 @@ body .content-wrapper .text-center
     background-color: #ffffff
     margin-right: 60px
     margin-bottom: 60px
+    overflow: hidden
     &:last-of-type
       margin-right: 0px
     &-img
