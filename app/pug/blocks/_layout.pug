@@ -11,9 +11,11 @@ html(lang="ru")
 		link(href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css", rel="stylesheet")
 		link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css")
 		link(href="https://unpkg.com/aos@2.3.1/dist/aos.css", rel="stylesheet")
+		link(rel="stylesheet", href="css/hamburgers.css")
 		link(type="text/css", href="css/main.css", rel="stylesheet")
 		title
 	body
+		div(id="overlay" style="display: none;")
 		#contentWrapper.content-wrapper
 			#pageWrapper.page-wrapper
 				include _header
@@ -25,4 +27,5 @@ html(lang="ru")
 		script(src="js/jquery-ui.min.js")
 		script(scr="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
 		script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+		script(src="js/hamburger.js") 
 		script(src="js/common.js")

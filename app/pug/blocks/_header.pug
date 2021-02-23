@@ -3,6 +3,9 @@ header.header
     .header__body.d-flex.ai-center.h-100
       a(href="/" class="header-logo")
         img(src="img/logo.png", alt="Logo")
+      button(class="hamburger hamburger--slider" type="button")
+        span(class="hamburger-box")
+          span(class="hamburger-inner")
       nav.main-menu.d-flex.ai-center.h-100
         ul.header-menu-list.h-100
           li.header-menu-list-item.d-flex.ai-center.justify-center.h-100
@@ -15,7 +18,24 @@ header.header
             span Все про лаванду
               svg(width="10px" height="10px" viewBox="0 0 284.929 284.929" style="enable-background:new 0 0 284.929 284.929;")
                 g
-                  path( d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441 L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082 c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647 c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z")
+                    path( d="M282.082,76.511l-14.274-14.273c-1.902-1.906-4.093-2.856-6.57-2.856c-2.471,0-4.661,0.95-6.563,2.856L142.466,174.441 L30.262,62.241c-1.903-1.906-4.093-2.856-6.567-2.856c-2.475,0-4.665,0.95-6.567,2.856L2.856,76.515C0.95,78.417,0,80.607,0,83.082 c0,2.473,0.953,4.663,2.856,6.565l133.043,133.046c1.902,1.903,4.093,2.854,6.567,2.854s4.661-0.951,6.562-2.854L282.082,89.647 c1.902-1.903,2.847-4.093,2.847-6.565C284.929,80.607,283.984,78.417,282.082,76.511z")
+            ul.dropdown
+              li 
+                a(href="")  Посадка лаванди у відкритий грунт
+              li 
+                a(href="")  Догляд за лавандою
+              li 
+                a(href="")  Стрижка лаванди
+              li 
+                a(href="")  Фотосесії в лавандовому полi
+              li 
+                a(href="")  Розмноження лаванди
+              li 
+                a(href="")  Види лаванди, характеристика та опис
+              li 
+                a(href="")  Суцвіття лаванди
+              li 
+                a(href="")  Доставка и оплата
         ul.header-menu-list.h-100
           li.header-menu-list-item.d-flex.ai-center.justify-center.h-100
             span Продукція з лаванди
@@ -27,8 +47,12 @@ header.header
         a.header-link.d-flex.ai-center(href="shop.html")
           img(src="img/shop.png", alt="")
           span Магазин
-      button(type="button" class="header-search d-flex ai-center justify-center" id="search")
+      .header-search.d-flex.ai-center.justify-center#search
         img(src="img/loupe.png", alt="")
+        form(action="" id="search-form" class="header-search-form d-flex ai-center")
+          input(type="text")
+          button(type="submit")
+            img(src="img/loupe.png", alt="")
       .header-contacts.d-flex.ai-center
         a(href="tel:123" class="header-contacts-phone d-flex ai-center")
           img(src="img/phone.png", alt="")
