@@ -124,12 +124,15 @@
     display: block!important
 .hamburger
   padding: 5px
+  display: none
 .hamburger.is-active
   z-index: 9999
   position: relative
   left: 163px
 
 @media(max-width: 1199px)
+  .hamburger
+    display: block
   .header-menu-list.active, .header-menu-list:hover
     background: #fff
   .header-menu-list.active span, .header-menu-list:hover span

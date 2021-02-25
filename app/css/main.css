@@ -241,7 +241,7 @@ body .content-wrapper .bold {
 
 .little-cards .little-card {
   width: 263px;
-  border: solid 2px #dadada;
+  border: solid 1px #dadada;
   background-color: #ffffff;
   margin-right: 30px;
   margin-bottom: 30px;
@@ -264,7 +264,7 @@ body .content-wrapper .bold {
     text-align: left;
     color: #22232c; }
   .little-cards .little-card:hover {
-    border: solid 2px #8a3fb5; }
+    border: solid 1px #8a3fb5; }
 
 h4.title {
   font-size: 25px;
@@ -423,15 +423,28 @@ body .content-wrapper .text-center {
       top: 4px;
       left: -5px;
       font-size: 24px; }
-  .text-section ul.bad li {
-    list-style-image: url(../img/read-arm.png); }
-  .text-section ul.good li {
-    list-style-image: url(../img/check.png); }
+  .text-section ul.bad {
+    margin-left: 20px; }
+    .text-section ul.bad li {
+      padding-left: 0px;
+      list-style-image: url(../img/read-arm.png); }
+      .text-section ul.bad li::before {
+        content: '';
+        display: none; }
+  .text-section ul.good {
+    margin-left: 20px; }
+    .text-section ul.good li {
+      padding-left: 0px;
+      list-style-image: url(../img/check.png); }
+      .text-section ul.good li::before {
+        content: '';
+        display: none; }
 
 .text-section ol {
-  margin-left: 25px; }
+  margin-left: 25px;
+  counter-reset: my-sec-counter; }
   .text-section ol li {
-    list-style: decimal;
+    list-style: none;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -440,7 +453,14 @@ body .content-wrapper .text-center {
     letter-spacing: normal;
     text-align: left;
     color: #22232c;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    position: relative; }
+    .text-section ol li::before {
+      counter-increment: my-sec-counter 1;
+      content: counter(my-sec-counter) ".";
+      font-weight: bold;
+      position: absolute;
+      left: -20px; }
 
 .text-section .img-left {
   float: left;
@@ -588,6 +608,21 @@ body .content-wrapper .text-center {
   .error-page .lavender-btn {
     margin-bottom: 100px; }
 
+.image-mobile {
+  display: none; }
+
+.main-consult-social a {
+  -webkit-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  transition: all .2s ease-in; }
+  .main-consult-social a:hover {
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px); }
+
+.main-consult-phone a:hover {
+  color: #cf4ac1; }
+
 .footer {
   background-image: url(../img/footer-bg.png);
   -webkit-background-size: initial initial;
@@ -647,7 +682,12 @@ body .content-wrapper .text-center {
     line-height: 3.21;
     letter-spacing: normal;
     text-align: left;
-    color: #22232c; }
+    color: #22232c;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    transition: all .2s ease-in; }
+  .footer-contacts a:hover span {
+    color: #8a3fb5; }
   .footer-contacts-social {
     margin: 50px 0px 30px 0px; }
 
@@ -792,7 +832,8 @@ body .content-wrapper .text-center {
     display: block !important; }
 
 .hamburger {
-  padding: 5px; }
+  padding: 5px;
+  display: none; }
 
 .hamburger.is-active {
   z-index: 9999;
@@ -800,6 +841,8 @@ body .content-wrapper .text-center {
   left: 163px; }
 
 @media (max-width: 1199px) {
+  .hamburger {
+    display: block; }
   .header-menu-list.active, .header-menu-list:hover {
     background: #fff; }
   .header-menu-list.active span, .header-menu-list:hover span {
@@ -2030,7 +2073,10 @@ body .content-wrapper .text-center {
   position: relative;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
-          flex-shrink: 0; }
+          flex-shrink: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
   .products-box .products-filter::after {
     content: url(../img/shadow.png);
     position: absolute;
@@ -2257,7 +2303,11 @@ body .content-wrapper .text-center {
     margin-right: 0px;
     width: 50%;
     padding: 0px 10px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .image-desctop {
+    display: none; }
+  .image-mobile {
+    display: block; } }
 
 @media (max-width: 660px) {
   .products-box .product-item,

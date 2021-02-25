@@ -161,7 +161,7 @@ body .content-wrapper .bold
 .little-cards
   & .little-card
     width: 263px
-    border: solid 2px #dadada
+    border: solid 1px #dadada
     background-color: #ffffff
     margin-right: 30px
     margin-bottom: 30px
@@ -182,7 +182,7 @@ body .content-wrapper .bold
       text-align: left
       color: #22232c
     &:hover
-      border: solid 2px #8a3fb5
+      border: solid 1px #8a3fb5
 h4.title
   font-size: 25px
   font-weight: 500
@@ -337,15 +337,26 @@ body .content-wrapper .text-center
         left: -5px
         font-size: 24px
     &.bad
+      margin-left: 20px
       li
+        padding-left: 0px
         list-style-image: url(../img/read-arm.png)
+        &::before
+          content: ''
+          display: none
     &.good
+      margin-left: 20px
       li
+        padding-left: 0px
         list-style-image: url(../img/check.png)
+        &::before
+          content: ''
+          display: none
   & ol
     margin-left: 25px
+    counter-reset: my-sec-counter
     li
-      list-style: decimal
+      list-style: none
       font-size: 14px
       font-weight: normal
       font-stretch: normal
@@ -355,6 +366,13 @@ body .content-wrapper .text-center
       text-align: left
       color: #22232c
       margin-bottom: 10px
+      position: relative
+      &::before
+        counter-increment: my-sec-counter 1
+        content: counter(my-sec-counter) "."
+        font-weight: bold
+        position: absolute
+        left: -20px
   & .img-left
     float: left
     margin-right: 20px
@@ -490,3 +508,16 @@ body .content-wrapper .text-center
     -webkit-text-fill-color: transparent
   & .lavender-btn
     margin-bottom: 100px
+
+.image-mobile
+  display: none
+
+.main-consult-social
+  & a
+    transition: all .2s ease-in
+    &:hover
+      transform: translateY(-5px)
+
+.main-consult-phone
+  & a:hover
+    color: $lightLavender
