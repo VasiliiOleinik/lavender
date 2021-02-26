@@ -49,10 +49,10 @@ header.header
           span Магазин
       .header-search.d-flex.ai-center.justify-center#search
         img(src="img/loupe.png", alt="")
-        form(action="" id="search-form" class="header-search-form d-flex ai-center")
-          input(type="text")
-          button(type="submit")
-            img(src="img/loupe.png", alt="")
+      form(action="" id="search-form" class="header-search-form d-flex ai-center")
+        input(type="text" name="search" placeholder="Поиск...")
+        button(type="button" class="d-flex ai-center justify-center" id="close-search")
+          img(src="img/close.png", alt="")
       .header-contacts.d-flex.ai-center
         a(href="tel:123" class="header-contacts-phone d-flex ai-center")
           img(src="img/phone.png", alt="")

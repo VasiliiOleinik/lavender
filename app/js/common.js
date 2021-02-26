@@ -48,13 +48,9 @@ $(function () {
     $('#search-form').toggleClass('active')
     $('#search-form').fadeToggle();
   });
-
-  $(document).mouseup(function (e) {
-    var div = $("#search-form.active");
-    if (!div.is(e.target)
-      && div.has(e.target).length === 0) {
-      div.fadeToggle();
-    }
+  $('#close-search').on('click', function() {
+    $('#search-form').toggleClass('active')
+    $('#search-form').fadeToggle();
   });
 
   $('#overlay').on('click', function () {

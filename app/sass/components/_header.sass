@@ -3,6 +3,7 @@
   height: 64px
   box-shadow: 0 0 43px 0 rgba(3, 3, 3, 0.58)
   background-color: #ffffff
+  position: relative
   &-logo
     margin-right: 10px
   &-menu-list
@@ -69,11 +70,12 @@
     cursor: pointer
     &-form
       position: absolute
-      top: 100%
-      width: 300px
+      top: 0
+      height: 100%
+      right: 259px
+      max-width: 840px
+      width: 100%
       background-color: #f9f9f9
-      right: 0
-      height: 40px
       padding: 5px
       border-radius: 5px
       display: none
@@ -82,11 +84,13 @@
         height: 100%
         background: #fff
         padding-right: 40px
+        padding-left: 10px
       & button
         position: absolute
         right: 0px
-        width: 40px
-        height: 35px
+        width: 65px
+        top: 0
+        height: 100%
 .dropdown
   display: none
   position: absolute
@@ -128,7 +132,7 @@
 .hamburger.is-active
   z-index: 9999
   position: relative
-  left: 163px
+  left: 150px
 
 @media(max-width: 1199px)
   .hamburger
@@ -184,3 +188,10 @@
     width: 100%
     min-height: 40px
     margin-bottom: 10px
+  .header-search-form
+    max-width: initial
+    width: 50%
+
+@media(max-width: 768px)
+  .hamburger
+    margin-right: auto
