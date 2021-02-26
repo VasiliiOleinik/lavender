@@ -60,8 +60,20 @@ $(function () {
   $('#overlay').on('click', function () {
     $('.hamburger').click();
   });
-  
-  AOS.init({disable: 'mobile'});
+
+  const height = $(".simple-page-banner.drop .simple-page-banner-title").height();
+  if (height < 40) {
+    $('.simple-page-banner.drop').css({ 'padding-bottom': '170px' });
+  }
+  $(window).resize(function () {
+    const height = $(".simple-page-banner.drop .simple-page-banner-title").height();
+    if (height < 40) {
+      $('.simple-page-banner.drop').css({ 'padding-bottom': '170px' });
+    }
+  });
+
+  AOS.init({ disable: 'mobile' });
+
 });
 
 

@@ -248,12 +248,22 @@ body .content-wrapper .bold {
   padding-right: 20px;
   -webkit-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
-  transition: all .2s ease-in; }
+  transition: all .2s ease-in;
+  height: 114px; }
+  .little-cards .little-card-img {
+    width: 97px;
+    height: 100%;
+    margin-right: 20px;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
   .little-cards .little-card:nth-of-type(4n) {
     margin-right: 0px; }
   .little-cards .little-card img {
-    margin-right: 20px;
-    max-width: 80px; }
+    max-width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain; }
   .little-cards .little-card span {
     font-size: 16px;
     font-weight: 500;
@@ -2316,7 +2326,11 @@ body .content-wrapper .text-center {
   .products-box .product-item {
     width: 320px; }
   .simple-page-banner-title {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .simple-page-banner.seedlings,
+  .simple-page-banner.hydrolat,
+  .simple-page-banner.search {
+    padding-bottom: 170px; } }
 
 @media (max-width: 500px) {
   .little-cards .little-card {
