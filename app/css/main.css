@@ -962,6 +962,10 @@ body .content-wrapper .text-center {
   .hamburger {
     margin-right: auto; } }
 
+@media (max-width: 450px) {
+  .dropdown li {
+    width: 100%; } }
+
 .main-page-banner {
   padding: 156px 0px 240px 0px;
   background-image: url(../img/main-banner-mobile.png);
