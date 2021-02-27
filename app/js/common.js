@@ -39,9 +39,13 @@ $(function () {
   // Калькулятор финиш
 
   $('.header-menu-list-item').hover(function () {
+    $('.header').addClass('menu-open');
     $(this).find('.dropdown').fadeIn();
+    $(this).find('.dropdown').css({'display': 'flex'});
   }, function () {
+    $('.header').removeClass('menu-open');
     $(this).find('.dropdown').fadeOut();
+    $(this).find('.dropdown').css({'display': 'none'});
   });
 
   $('#search').on('click', function () {

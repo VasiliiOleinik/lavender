@@ -444,13 +444,14 @@
       margin-right: 15px
 
 .main-consult
-  background-image: url(../img/consult-bg.png)
+  background-image: url(../img/wawe-bg.png)
   background-size: initial
   background-position: top center
   background-repeat: no-repeat
   padding-top: 135px
   padding-bottom: 125px
   margin-bottom: 30px
+  position: relative
   &-text
     font-size: 15px
     font-weight: 500
@@ -665,7 +666,7 @@
     font-size: 20px
     text-align: left
     padding-left: 100px
-  .dropshipping-box-info 
+  .dropshipping-box-info
     position: relative
   .main-dropshipping .dropshipping-box-info img
     position: absolute
@@ -678,3 +679,58 @@
 @media(max-width: 420px)
   .best-propose-calc
     padding: 40px 15px 15px 15px
+
+.waves
+  position: relative
+  .wave
+    width: 100%
+    overflow: hidden
+    position: absolute
+    top: -218px
+  &-top
+    position: absolute
+    top: 0
+    transform: rotate(180deg)
+    left: 0
+    width: 100%
+    overflow: hidden
+    & .wave__one
+      background: url("../img/wave_top-2.png") repeat-x
+      width: 7000px
+      height: 136px
+      animation: waves 15s infinite linear
+      position: absolute
+      top: 25px
+    & .wave__two
+      background: url("../img/wave_top_opacity-2.png") repeat-x
+      width: 7000px
+      height: 120px
+      animation: waves 15s infinite linear
+      position: relative
+      top: 0
+  &-bottom
+    position: absolute
+    bottom: 0px
+    left: 0
+    width: 100%
+    overflow: hidden
+    & .wave__one
+      background: url("../img/wave_top-2.png") repeat-x
+      width: 7000px
+      height: 136px
+      animation: waves 15s infinite linear
+      position: absolute
+      top: 25px
+    & .wave__two
+      background: url("../img/wave_top_opacity-2.png") repeat-x
+      width: 7000px
+      height: 120px
+      animation: waves 15s infinite linear
+      position: relative
+      top: 0
+
+@keyframes waves
+  0%
+    margin-left: 0
+  100%
+    margin-left: -1938px

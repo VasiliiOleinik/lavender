@@ -4,6 +4,16 @@
   box-shadow: 0 0 43px 0 rgba(3, 3, 3, 0.58)
   background-color: #ffffff
   position: relative
+  &.menu-open
+    &::before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 206px
+      left: 0
+      top: 64px
+      background: #f9f9f9
+      z-index: 1
   &-logo
     margin-right: 10px
   &-menu-list
@@ -95,22 +105,31 @@
   display: none
   position: absolute
   top: 100%
-  left: 50%
-  transform: translateX(-50%)
-  background-color: #f9f9f9
+  left: -20px
   padding: 10px
   border-radius: 5px
   z-index: 10
-  width: 300px
-  box-shadow: 0px 0px 10px 1px rgba(144,74 ,185,.7)
+  width: 700px
   padding: 5px
+  flex-wrap: wrap
   & li
-    background: white
+    width: 50%
   & a
+    padding: 15px 15px 15px 30px
     display: flex
-    padding: 10px 0px
+    align-items: center
+    justify-content: flex-start
+    position: relative
+    &::before
+      content: url('../img/right.png')
+      position: absolute
+      left: 10px
+      top: 13px
     &:hover
-      color: $darkLavender
+      color: #fff
+      background: $lavender
+      &::before
+        filter: invert(1)
 
 #overlay
   position: fixed
@@ -129,10 +148,6 @@
 .hamburger
   padding: 5px
   display: none
-.hamburger.is-active
-  z-index: 9999
-  position: relative
-  left: 150px
 
 @media(max-width: 1199px)
   .hamburger
@@ -145,21 +160,19 @@
     fill: $black
   .main-menu
     overflow: auto
-    position: fixed
-    top: 0
-    width: 270px
-    height: 100%
+    position: absolute
+    top: 65px
+    height: 100vh
     background: #fff
-    padding: 15px
     z-index: 150
-    box-shadow: -7.1px 0 14px 0 rgba(0,0,0,.15)
-    transition: all .2s ease-in-ou
+    transition: all .2s ease-in-out
     flex-direction: column
     align-items: flex-start
     left: -300px
-    box-shadow: 0px 0px 10px 1px rgba(144,74 ,185,.7)
+    padding: 0px
     &.active
       left: 0
+      width: 100vw
   .header-menu-list
     padding: 0px 15px
     cursor: pointer
@@ -173,21 +186,26 @@
       justify-content: flex-start
       min-height: 40px
       margin-bottom: 10px
+      & span
+        padding: 15px
+        padding-left: 60px
   & .dropdown
     position: static
     left: 0
     transform: initial
     width: 100%
-    background: transparent
+    background: #f9f9f9
     box-shadow: none
     font-size: 14px
-    margin-left: 10px
+    padding-left: 60px
   & .header-menu-list-item
     flex-direction: column
   & .header-link
     width: 100%
     min-height: 40px
     margin-bottom: 10px
+    padding: 15px
+    padding-left: 60px
   .header-search-form
     max-width: initial
     width: 50%
